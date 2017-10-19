@@ -1,4 +1,4 @@
-ROM ubuntu:trusty
+FROM ubuntu:trusty
 
 MAINTAINER Luis Alvarez <l.alvarez@gbh.com.do>
 
