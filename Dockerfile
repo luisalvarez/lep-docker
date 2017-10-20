@@ -1,6 +1,7 @@
 FROM ubuntu:trusty
+# maintainer by luis inspire in solucionesgbh/lep image
+MAINTAINER Luis Alvarez <l.alvarez@gbh.com.do> 
 
-MAINTAINER Luis Alvarez <l.alvarez@gbh.com.do>
 
 # Install Dependecies
 RUN apt-get update && \
