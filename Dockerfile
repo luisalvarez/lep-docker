@@ -9,12 +9,17 @@ RUN apt-get update && \
   apt-add-repository ppa:ondrej/php -y && \
   apt-get update && \
   apt-get install -y --force-yes php5.6-fpm php5.6-cli php5.6-dev \
-    php5.6-pgsql php5.6-sqlite3 php5.6-gd \
-    php5.6-curl php5.6-memcached \
-    php5.6-imap php5.6-mysql php5.6-mbstring \
+    php5.6-pgsql php5.6-sqlite3 php5.6-gd  php5.6-common \
+    php5.6-curl  php-pear php5.6-memcached \
+    php5.6-imap php5.6-imagick php5.6-mysql php5.6-mbstring \
     php5.6-xml php5.6-zip php5.6-bcmath php5.6-soap \
     php5.6-intl php5.6-readline \
-    nginx zip supervisor git php5.6-mcrypt
+    nginx \
+    curl \
+    zip \ 
+    supervisor \
+    git \
+    php5.6-mcrypt
 
 # Enable mcrypt
 RUN phpenmod mcrypt
